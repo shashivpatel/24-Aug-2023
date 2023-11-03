@@ -1,0 +1,138 @@
+{
+  "id": "471fede2-3dce-4c59-a1b1-401e1c3bc76c",
+  "version": "2.0",
+  "name": "Magento",
+  "url": "https://magento.softwaretestingboard.com/",
+  "tests": [{
+    "id": "ffd2ef62-f720-447e-95e5-82adc0e85e8f",
+    "name": "Magento",
+    "commands": [{
+      "id": "6acf0041-b1b4-4b56-b2bc-ea253d6e7202",
+      "comment": "",
+      "command": "open",
+      "target": "https://magento.softwaretestingboard.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c59ddf2e-5885-4511-a9b3-0d334af706dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e85965c5-3267-44fc-8b0f-1a1a2d63be04",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.header:nth-child(2) > .authorization-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8%2C/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9262dc5-f2b7-4d3c-a466-3b0de2b22fa2",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=login[username]", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22624948-8508-4134-8f72-9c1b1bc2cade",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=login[username]", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "shashi@gmail.com"
+    }, {
+      "id": "14d5d112-3c94-4ca7-aa28-b4d6859769f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=login[password]", "name"],
+        ["css=.field:nth-child(3) #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "shashi@2016"
+    }, {
+      "id": "46dc5c0b-fdc4-4141-bf1a-cf49e20b4f66",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=login[password]", "name"],
+        ["css=.field:nth-child(3) #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6c46ca42-e7fd-4d73-9d55-206bd56bbe58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header:nth-child(2) > .customer-welcome .action",
+      "targets": [
+        ["css=.header:nth-child(2) > .customer-welcome .action", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d40738e-beff-4b9e-85b7-aa376ceec678",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Out",
+      "targets": [
+        ["linkText=Sign Out", "linkText"],
+        ["css=.active .authorization-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Out')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://magento.softwaretestingboard.com/customer/account/logout/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f3b95c4-eb9d-413b-9812-8df692d3e2aa",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5a5dee05-d8e7-476b-9578-96dc6da42651",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ffd2ef62-f720-447e-95e5-82adc0e85e8f"]
+  }],
+  "urls": ["https://magento.softwaretestingboard.com/"],
+  "plugins": []
+}
